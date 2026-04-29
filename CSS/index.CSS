@@ -1,6 +1,5 @@
-/* --- أنيميشن اللوغو وحجمه --- */
 .anim-logo img {
-    height: 55px; /* نفس الارتفاع الموجود في HTML */
+    height: 55px; 
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -9,12 +8,11 @@
 }
 
 .nav-link.active {
-    border-bottom: 2px solid #0d6efd; /* خط أزرق بسمك 2 بكسل */
+    border-bottom: 2px solid #0d6efd; 
     padding-bottom: 2px;}
 
-/* تنسيق الروابط */
 .nav-link {
-    font-size: 17px; /* تكبير الخط قليلاً ليتناسب مع حجم اللوغو الجديد */
+    font-size: 17px; 
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
     
@@ -25,7 +23,6 @@
     transform: translateY(-3px);
 }
 
-/* حركة دخول النافبار من الأعلى */
 @keyframes slideDown {
     from { transform: translateY(-100%); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
@@ -38,37 +35,30 @@
 
 
 
-/* --- تنسيقات قسم الـ Hero (Flexbox) --- */
 .hero-container {
-    background-color: #f8f9fa; /* الخلفية الفاتحة المريحة للعين */
-    padding: 100px 0; /* مسافة كبيرة للأعلى والأسفل لإعطاء مساحة للتنفس */
+    background-color: #f8f9fa; 
+    padding: 100px 0;
     overflow: hidden;
 }
 
-/* استخدام Flexbox المدمج في Bootstrap عبر كلاس row */
 .row {
-    display: flex; /* Bootstrap يفعل هذا تلقائياً، لكن للتأكيد */
-    align-items: center; /* محاذاة النص والصورة عمودياً في المنتصف */
-}
+    display: flex;
+    align-items: center; }
 
-/* تنسيق العناوين (Bold & Dark) */
 .hero-title {
     color: #212529;
     line-height: 1.3;
 }
 
-/* تخصيص اللون الأزرق المطلوب */
 .text-primary {
     color: #0d6efd !important;
 }
 
-/* تنسيق النص الوصفي */
 .hero-text {
     color: #6c757d;
     margin: 25px 0 35px 0;
 }
 
-/* تنسيق الزر (دائري الأطراف وبلون Bootstrap الأساسي) */
 .btn-primary {
     background-color: #0d6efd !important;
     border: none;
@@ -76,17 +66,15 @@
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px); /* حركة خفيفة عند التمرير لتحقيق شرط الأنيميشن */
+    transform: translateY(-3px); 
     box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3) !important;
 }
 
-/* تنسيق الصورة */
 .hero-image {
     max-height: 450px;
     transition: transform 0.3s ease;
 }
 
-/* --- الأنيميشن عند التحميل (للمتطلبات) --- */
 .anim-fade-in {
     animation: fadeInSlide 1s ease-out;
 }
@@ -105,7 +93,6 @@
 
 
 
-/* تنسيق الكروت */
 .feature-card {
     background: #fff;
     padding: 40px 30px;
@@ -125,7 +112,6 @@
     font-size: 0.95rem;
 }
 
-/* صناديق الأيقونات */
 .icon-box {
     width: 60px;
     height: 60px;
@@ -137,7 +123,6 @@
     font-size: 1.5rem;
 }
 
-/* الألوان الخاصة (Matching the Image) */
 .bg-purple-light { background-color: #f3e8ff; }
 .text-purple { color: #a855f7; }
 
@@ -149,13 +134,11 @@
 
 .text-blue { color: #0d6efd; }
 
-/* حركة التفاعل (Hover Animation) */
 .anim-hover:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-/* تنسيق شريط الإحصائيات بالأسفل باستخدام Flexbox */
 .stats-bar {
     border: 1px solid #f0f0f0;
 }
@@ -165,7 +148,6 @@
 }
 
 
-/* تنسيق قسم الفيديو */
 .video-wrapper {
     border-radius: 20px;
     overflow: hidden;
@@ -174,20 +156,17 @@
 }
 
 .video-wrapper:hover {
-    transform: scale(1.02); /* حركة خفيفة عند التمرير */
+    transform: scale(1.02);
 }
 
-/* تنسيق مشغل الصوت */
 .audio-player-custom {
     border: 1px solid #eee;
 }
 
-/* تعديل ألوان مشغل الصوت ليناسب التصميم */
 audio::-webkit-media-controls-enclosure {
     background-color: #f8f9fa;
 }
 
-/* تنسيق النصوص */
 .how-it-works h2 {
     color: #212529;
 }
