@@ -1,0 +1,198 @@
+/* --- أنيميشن اللوغو وحجمه --- */
+.anim-logo img {
+    height: 55px; /* نفس الارتفاع الموجود في HTML */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.anim-logo:hover img {
+    transform: scale(1.1) ; 
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #0d6efd; /* خط أزرق بسمك 2 بكسل */
+    padding-bottom: 2px;}
+
+/* تنسيق الروابط */
+.nav-link {
+    font-size: 17px; /* تكبير الخط قليلاً ليتناسب مع حجم اللوغو الجديد */
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+    transform: translateY(-3px);
+}
+
+/* حركة دخول النافبار من الأعلى */
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.custom-nav {
+    animation: slideDown 0.6s ease-out;
+}
+
+
+
+
+/* --- تنسيقات قسم الـ Hero (Flexbox) --- */
+.hero-container {
+    background-color: #f8f9fa; /* الخلفية الفاتحة المريحة للعين */
+    padding: 100px 0; /* مسافة كبيرة للأعلى والأسفل لإعطاء مساحة للتنفس */
+    overflow: hidden;
+}
+
+/* استخدام Flexbox المدمج في Bootstrap عبر كلاس row */
+.row {
+    display: flex; /* Bootstrap يفعل هذا تلقائياً، لكن للتأكيد */
+    align-items: center; /* محاذاة النص والصورة عمودياً في المنتصف */
+}
+
+/* تنسيق العناوين (Bold & Dark) */
+.hero-title {
+    color: #212529;
+    line-height: 1.3;
+}
+
+/* تخصيص اللون الأزرق المطلوب */
+.text-primary {
+    color: #0d6efd !important;
+}
+
+/* تنسيق النص الوصفي */
+.hero-text {
+    color: #6c757d;
+    margin: 25px 0 35px 0;
+}
+
+/* تنسيق الزر (دائري الأطراف وبلون Bootstrap الأساسي) */
+.btn-primary {
+    background-color: #0d6efd !important;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px); /* حركة خفيفة عند التمرير لتحقيق شرط الأنيميشن */
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3) !important;
+}
+
+/* تنسيق الصورة */
+.hero-image {
+    max-height: 450px;
+    transition: transform 0.3s ease;
+}
+
+/* --- الأنيميشن عند التحميل (للمتطلبات) --- */
+.anim-fade-in {
+    animation: fadeInSlide 1s ease-out;
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* تنسيق الكروت */
+.feature-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    border: 1px solid #f0f0f0;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.feature-card h4 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.feature-card p {
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+/* صناديق الأيقونات */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
+/* الألوان الخاصة (Matching the Image) */
+.bg-purple-light { background-color: #f3e8ff; }
+.text-purple { color: #a855f7; }
+
+.bg-green-light { background-color: #dcfce7; }
+.text-green { color: #22c55e; }
+
+.bg-orange-light { background-color: #ffedd5; }
+.text-orange { color: #f97316; }
+
+.text-blue { color: #0d6efd; }
+
+/* حركة التفاعل (Hover Animation) */
+.anim-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* تنسيق شريط الإحصائيات بالأسفل باستخدام Flexbox */
+.stats-bar {
+    border: 1px solid #f0f0f0;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+
+/* تنسيق قسم الفيديو */
+.video-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #000;
+    transition: transform 0.4s ease;
+}
+
+.video-wrapper:hover {
+    transform: scale(1.02); /* حركة خفيفة عند التمرير */
+}
+
+/* تنسيق مشغل الصوت */
+.audio-player-custom {
+    border: 1px solid #eee;
+}
+
+/* تعديل ألوان مشغل الصوت ليناسب التصميم */
+audio::-webkit-media-controls-enclosure {
+    background-color: #f8f9fa;
+}
+
+/* تنسيق النصوص */
+.how-it-works h2 {
+    color: #212529;
+}
+
+.how-it-works .lead {
+    color: #4b5563;
+    line-height: 1.6;
+}

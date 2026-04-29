@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Remas Al-Shabeeb" />
+    <meta name="description" content="Taskify is a modern task management and productivity app designed to simplify to-do lists, organize projects, and help users achieve goals efficiently. With a clean interface and smart features, Taskify turns everyday tasks into accomplishments." />
+    <link rel="stylesheet" href="../CSS/index.CSS"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Taskify</title>
+</head>
+<body>
+
+
+ <nav class="navbar navbar-expand-lg custom-nav shadow-sm bg-white">
+  <div class="container-fluid">
+    <a class="nav-logo anim-logo" href="index.html">
+      <img src="../Elements/logo Taskify.png" alt="Taskify Logo" height="55" width="auto">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold text-primary" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-primary" href="tasks.html">Tasks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-primary" href="table.html">Table</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-primary" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-primary" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <div class="d-flex">
+        <a href="#" class="btn btn-primary rounded-pill px-4 shadow-sm">Get Started</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<header class="hero-container anim-fade-in">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <div class="col-md-6 text-center order-md-2">
+                <img src="../Elements/Task list.png" alt="3D Checklist Illustration" class="img-fluid hero-image">
+            </div>
+
+            <div class="col-md-6 order-md-1">
+                <h1 class="display-5 fw-bold hero-title">
+                    Organize Your Tasks. <br>
+                    <span class="text-primary">Boost Your Productivity.</span>
+                </h1>
+                <p class="lead hero-text">
+                    A simple and beautiful way to manage your daily tasks and achieve your goals.
+                </p>
+                <div class="hero-btns-wrapper">
+                    <a href="tasks.html" class="btn btn-primary btn-lg shadow rounded-pill px-4">
+                        Start Managing
+                        <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<section class="why-choose-us py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-5">Why Choose Us?</h2>
+        
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="feature-card anim-hover">
+                    <div class="icon-box bg-purple-light">
+                        <i class="bi bi-calendar-check-fill text-purple"></i>
+                    </div>
+                    <h4>Add Tasks Easily</h4>
+                    <p>Quickly add your tasks and keep everything in one place.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card anim-hover">
+                    <div class="icon-box bg-green-light">
+                        <i class="bi bi-graph-up-arrow text-green"></i>
+                    </div>
+                    <h4>Track Progress</h4>
+                    <p>Track your progress and stay on top of your goals.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card anim-hover">
+                    <div class="icon-box bg-orange-light">
+                        <i class="bi bi-bell-fill text-orange"></i>
+                    </div>
+                    <h4>Stay Organized</h4>
+                    <p>Organize your tasks by priorities and due dates.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-bar d-flex justify-content-around align-items-center shadow-sm p-4 rounded-4 bg-white">
+            <div class="stat-item"><span class="fw-bold fs-4 text-purple">120+</span> <p class="mb-0 text-muted">Tasks Created</p></div>
+            <div class="stat-item"><span class="fw-bold fs-4 text-green">85%</span> <p class="mb-0 text-muted">Tasks Completed</p></div>
+            <div class="stat-item"><span class="fw-bold fs-4 text-blue">24</span> <p class="mb-0 text-muted">Projects</p></div>
+            <div class="stat-item"><span class="fw-bold fs-4 text-orange">15</span> <p class="mb-0 text-muted">Daily Goals</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="how-it-works py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Watch How It Works</h2>
+        
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+                <div class="video-wrapper shadow-lg position-relative">
+                    <video controls class="rounded-4 w-100">
+                        <source src="../Elements/video time.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="content-box">
+                    <p class="lead mb-4 fw-bold text-primary">
+                        See how Task Manager can help you stay organized and productive every day.
+                    </p>
+                    
+                    <div class="audio-player-custom p-3 rounded-pill d-flex align-items-center bg-white shadow-sm">
+                        <audio controls class="w-100">
+                            <source src="../Elements/video time audio.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-5 mt-5">
+    <div class="container text-center">
+        <div class="mb-4">
+            <img src="../Elements/logo Taskify.png" alt="Logo" height="30" class="filter-white">
+            <p class="mt-3 text-secondary">Simple, smart and efficient task management.</p>
+        </div>
+        <hr class="text-secondary">
+        <p class="mb-0 text-secondary">© 2026 Taskify. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
