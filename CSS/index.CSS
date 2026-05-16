@@ -1,15 +1,16 @@
 .anim-logo img {
     height: 55px; 
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.4s cubic-bezier(0.175, 0.850, 0.30, 1.250);
 }
 
 .anim-logo:hover img {
     transform: scale(1.1) ; 
 }
 
+/*كنت بجرب اعمل خط تحت كل مكان بكون موجود فيه ما زبطت لذلك بنعدل بعدين
 .nav-link.active {
     border-bottom: 2px solid #0d6efd; 
-    padding-bottom: 2px;}
+    padding-bottom: 2px;}*/
 
 .nav-link {
     font-size: 17px; 
@@ -307,4 +308,163 @@ audio::-webkit-media-controls-enclosure {
 .illustration-container img {
     max-width: 90%;
     filter: drop-shadow(0 15px 25px rgba(0,0,0,0.05));
+}
+
+
+
+body.dark-mode {
+    background-color: #121212 !important; 
+    color: #f8f9fa !important; 
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e1e !important;
+    border-bottom: 1px solid #2d2d2d !important;
+}
+
+body.dark-mode .navbar .nav-link {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .card, 
+body.dark-mode .table {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border-color: #2d2d2d !important;
+}
+
+body.dark-mode .table-light {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode #themeIconImg {
+    filter: invert(1) drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+}
+
+body.dark-mode #themeIconImg {
+    filter: invert(1);
+}
+
+
+
+
+
+
+.calendar-weekdays-header {
+    display: flex !important;
+    width: 100% !important;
+}
+.calendar-weekdays-header div {
+    width: 14.285% !important;
+    text-align: center;
+}
+
+#calendarDaysGrid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    border-left: 1px solid #e2e8f0 !important;
+    border-top: 1px solid #e2e8f0 !important;
+    box-sizing: border-box !important;
+    background-color: #ffffff;
+}
+
+.calendar-card-day {
+    width: 14.285% !important; 
+    max-width: 14.285% !important;
+    min-height: 110px !important; 
+    border-right: 1px solid #e2e8f0 !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    padding: 8px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    background-color: #ffffff !important;
+    box-sizing: border-box !important;
+}
+
+.calendar-tasks-container {
+    width: 100% !important;
+    margin-top: 6px !important;
+}
+
+.calendar-task-badge {
+    font-size: 11px !important;
+    padding: 4px 6px !important;
+    border-radius: 5px !important;
+    margin-bottom: 4px !important;
+    display: block !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important; 
+}
+
+.bg-task-green { background-color: #e2f5ec !important; color: #0f5132 !important; }
+.bg-task-purple { background-color: #f0e6fc !important; color: #4b2679 !important; }
+.bg-task-pink { background-color: #fde8eb !important; color: #842029 !important; }
+
+.calendar-card-day.neighbor-month { 
+    background-color: #f8fafc !important; 
+    color: #cbd5e1 !important; 
+}
+
+.current-active-day { 
+    background-color: #0d6efd !important; 
+    color: #ffffff !important; 
+    border-radius: 50% !important; 
+    display: inline-block !important; 
+    text-align: center !important; 
+    width: 26px !important; 
+    height: 26px !important; 
+    line-height: 26px !important; 
+}
+
+/* ==========================================================================
+   ========================================================================== */
+body.dark-mode #calendarDaysGrid { 
+    border-color: #2d2d2d !important; 
+    background-color: #1a1a1a !important;
+}
+body.dark-mode .calendar-card-day { 
+    background-color: #1e1e1e !important; 
+    border-color: #2d2d2d !important; 
+    color: #ffffff !important; 
+}
+body.dark-mode .calendar-card-day.neighbor-month { 
+    background-color: #141414 !important; 
+    color: #475569 !important; 
+}
+
+
+
+
+
+.form-control:focus {
+    border-color: #0d6efd !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15) !important;
+}
+
+body.dark-mode .card, 
+body.dark-mode form {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .form-control {
+    background-color: #2b2b2b !important;
+    border-color: #404040 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #888888 !important;
+}
+
+body.dark-mode h2, 
+body.dark-mode h1 {
+    color: #ffffff !important;
 }

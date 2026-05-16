@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/index.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>About Us</title>
+    <title>Calendar</title>
 </head>
 <body>
-
-
-     <nav class="navbar navbar-expand-lg custom-nav shadow-sm bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg custom-nav shadow-sm bg-white sticky-top">
   <div class="container-fluid">
     <a class="nav-logo anim-logo" href="index.html">
       <img src="../Elements/logo Taskify.png" alt="Taskify Logo" height="55" width="auto">
@@ -42,7 +40,7 @@
         </li>
       </ul>
 
-      <div class="d-flex align-items-center">
+       <div class="d-flex align-items-center">
         <button id="darkModeToggle" class="btn btn-outline-secondary rounded-circle me-3 border-0 p-1">
             <img id="themeIconImg" src="../Elements/bulb.png" alt="Toggle Theme" height="30" width="30">
         </button>
@@ -51,53 +49,51 @@
     </div>
   </div>
 </nav>
-  
-    <div class="container py-5">
-    <div class="about-header mb-5">
-        <h1 class="fw-bold">About Us</h1>
-        <p class="text-muted">Learn more about our mission and goals.</p>
-    </div>
 
-    <div class="row align-items-center mb-5 g-5">
-        <div class="col-md-6">
-            <div class="about-img-container text-center">
-                <img src="../Elements/about us.png" alt="Our Mission" class="img-fluid">
-            </div>
-        </div>
-        <div class="col-md-6">
-            <h3 class="fw-bold mb-3">Our Mission</h3>
-            <p class="text-secondary leading-relaxed">
-                Our mission is to help people organize their tasks, manage their time effectively, and achieve more every day. 
-                We believe that productivity should be simple and beautiful.
-            </p>
-        </div>
-    </div>
 
-    <div class="why-taskmanager mt-5">
-        <h4 class="fw-bold mb-4">Why Taskife?</h4>
-        <ul class="list-unstyled">
-    <li class="mb-3 d-flex align-items-center">
-        <input class="form-check-input custom-check me-3" type="checkbox" id="task1" checked>
-        <label class="form-check-label fs-5 text-secondary" for="task1">Easy to use</label>
-    </li>
-    <li class="mb-3 d-flex align-items-center">
-        <input class="form-check-input custom-check me-3" type="checkbox" id="task2">
-        <label class="form-check-label fs-5 text-secondary" for="task2">Beautiful and modern design</label>
-    </li>
-    <li class="mb-3 d-flex align-items-center">
-        <input class="form-check-input custom-check me-3" type="checkbox" id="task3">
-        <label class="form-check-label fs-5 text-secondary" for="task3">Keeps you focused and productive</label>
-    </li>
-    <li class="mb-3 d-flex align-items-center">
-        <input class="form-check-input custom-check me-3" type="checkbox" id="task4">
-        <label class="form-check-label fs-5 text-secondary" for="task4">Access your tasks anywhere</label>
-    </li>
-        </ul>
+<div class="container py-5">
+    <div class="card shadow-sm border-0 rounded-4 p-4 bg-white">
+      
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <div class="btn-group" role="group">
+            <button class="btn btn-outline-primary view-btn active" data-view="month">Month</button>
+            <button class="btn btn-outline-primary view-btn" data-view="week">Week</button>
+            <button class="btn btn-outline-primary view-btn" data-view="day">Day</button>
+          </div>
+        </div>
+        <h3 class="fw-bold m-0 text-dark" id="calendarTitle">April 2026</h3>
+        <div>
+          <button id="prevMonthBtn" class="btn btn-sm btn-light border rounded-circle me-1">&lt;</button>
+          <button id="todayBtn" class="btn btn-sm btn-primary rounded-pill px-3 me-1">Today</button>
+          <button id="nextMonthBtn" class="btn btn-sm btn-light border rounded-circle">&gt;</button>
+        </div>
+      </div>
+
+      <div id="monthViewWrapper">
+        <div class="calendar-weekdays-header text-center fw-bold text-muted border-bottom pb-2 mb-2">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        
+        <div id="calendarDaysGrid"></div>
+      </div>
+
+      <div id="otherViewsWrapper" class="d-none text-center py-5 text-muted">
+        <h5 id="viewMessage">Displaying View...</h5>
+      </div>
+
     </div>
-</div>
+  </div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="../JS/Theme.JS"></script>
+<script src="../JS/Calendar.JS"></script>
 </body>
 </html>
